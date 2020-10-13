@@ -11,9 +11,10 @@ public class ReversePolishNotation {
     public static void main(String[] args) {
         ReversePolishNotation r = new ReversePolishNotation();
         String test = "5 + 2 * (3 * (3 - 1 * 2 + 1))";
-        String test2 = "(5 + 2) * 6";
+        String test2 = "(1 + 2) * 6";
+        String test3 = "(1 + 2 * (3 + 4 / 5))";
 
-        String s = r.convert(test2);
+        String s = r.convert(test3);
         System.out.println(s);
     }
 
